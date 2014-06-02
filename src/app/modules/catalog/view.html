@@ -1,0 +1,27 @@
+
+<div class="row catalog">
+  <ol class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Catlog</a></li>
+  </ol>
+  <h2>Apps</h2>
+  <div class="thumbnail-view row">
+    <div class="col-xs-6 col-md-2" ng-repeat="service in services">
+      <div class="result thumbnail">
+          <div class="product-img-wrapper">
+              <a href="#/detail/{{service.id}}"><img ng-src="{{service.icon}}" alt="..." width="154" /></a>
+          </div>
+          <div class="caption">
+              
+              <p class="product-name" ng-bind="service.name"></p>
+              
+              <p class="small">
+                  {{service.description}}
+                  <br />
+              </p>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+</div>

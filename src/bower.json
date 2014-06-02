@@ -1,0 +1,19 @@
+{
+  "name": "vm-vhcs-service-catalog",
+  "version": "0.0.1",
+  "main": "dist/index.html",
+  "ignore": [
+    "**/.*",
+    "src",
+    "test",
+    "*.md",
+    "AUTHORS.txt",
+    "Gruntfile.js",
+    "package.json"
+  ],
+  "devDependencies": {
+    "bootstrap" : "3.1.1",
+    "angular" : "1.2.16"
+  },
+  "keywords": []
+}
