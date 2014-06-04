@@ -47,18 +47,68 @@
     }
   });
 
+
+  module.factory('controllerService', function($q, $cacheFactory) {
+      var controllerPromises = {};
+      var serviceStub = {};
+      var controllerCache = $cacheFactory("controllerCache");
+      serviceStub.getControllerDescriptor = function(controllerId){
+        if(controllerPromises[controllerId]){
+          return controllerPromises[controllerId];
+        }
+
+        var deferred = $q.defer();
+        controllerPromises[controllerId] = deferred.promise;
+
+        if(controllerCache.get(controllerId)){
+          deferred.resolve( controllerCache.get(controllerId) );
+        }else{
+          $.ajax({
+            url : controllerId + "/controller.js",
+            dataType : "text"
+          }).done(function(controllerDescriptoStr){
+            
+            var dummyFn = new Function("return (" + controllerDescriptoStr + ")");
+            var controllerDescriptor = dummyFn.apply(this);
+            controllerCache.put(controllerId, controllerDescriptor);
+            deferred.resolve(controllerDescriptor);
+            
+          })
+        }
+        return deferred.promise;
+      }
+      return serviceStub;
+  });
+
   module.directive("vmController", function(){
     return {
       restrict : "A",
       scope : {
         param : "=param"
       },
-      controller : ["$scope", "$element", "$http", function($scope, $element, $http){
-        $scope.templateURL = "app/modules/" + $element.attr("vm-controller") + "/view.html";
+      controller : ["$scope", "$element", "$http", "controllerService", function($scope, $element, $http, controllerService){
+        var componentName = $element.attr("vm-controller");
+        $scope.templateURL = componentName + "/view.html";
+        controllerService.getControllerDescriptor(componentName).then(function (controllerDescriptor) {
+          for(var key in controllerDescriptor){
+            
+            if(typeof($scope[key]) == "function" || typeof($scope[key]) == "undefined"){
+              if(typeof(controllerDescriptor[key]) == "function"){
+                $scope[key] = angular.bind($scope, controllerDescriptor[key]);
+              }else{
+                $scope[key] = controllerDescriptor[key];
+              }
+              
+            } 
+          }
+        })
       }],
       template : "<div ng-include='templateURL'></div>" 
     }
   })
+
+
+
 
 
   module.controller("vm.vchs.saas.controllers.main", ["$scope", function($scope){
