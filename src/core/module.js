@@ -147,6 +147,11 @@
           })
       }
     })
+
+    $scope.formattedJSON = function(){
+      return JSON.stringify($scope.descriptor, null, '\t')
+    }
+
   }]);
   
 
