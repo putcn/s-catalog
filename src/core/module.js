@@ -80,30 +80,52 @@
       return serviceStub;
   });
 
-  module.directive("vmController", function(){
+  module.directive("vmComponent", function(){
     return {
       restrict : "A",
       scope : {
-        param : "=param"
+        param : "=param",
+        componentName : "=vmComponent",
+        children : "=children"
       },
       controller : ["$scope", "$element", "$http", "controllerService", function($scope, $element, $http, controllerService){
-        var componentName = $element.attr("vm-controller");
-        $scope.templateURL = componentName + "/view.html";
-        controllerService.getControllerDescriptor(componentName).then(function (controllerDescriptor) {
-          for(var key in controllerDescriptor){
-            
-            if(typeof($scope[key]) == "function" || typeof($scope[key]) == "undefined"){
-              if(typeof(controllerDescriptor[key]) == "function"){
-                $scope[key] = angular.bind($scope, controllerDescriptor[key]);
-              }else{
-                $scope[key] = controllerDescriptor[key];
-              }
-              
-            } 
+        
+        $scope.$watch("componentName", function(){
+
+          var componentName = $scope.componentName;
+          if(componentName){
+            $scope.templateURL = componentName + "/view.html";
+            controllerService.getControllerDescriptor(componentName).then(function (controllerDescriptor) {
+              angular.forEach(controllerDescriptor, function(attr, name){
+                if(typeof($scope[name]) == "function" || typeof($scope[name]) == "undefined"){
+                  if(typeof(attr) == "function"){
+                    $scope[name] = angular.bind($scope, attr);
+                  }else{
+                    $scope[name] = attr;
+                  }
+                }
+
+                if(typeof($scope[name]) != "function"){
+                  $scope[name] = $scope.param[name];
+                }
+
+              })
+            })
           }
-        })
+        }) //end of componentName watch
+        
       }],
       template : "<div ng-include='templateURL'></div>" 
+    }
+  })
+
+  module.directive("vmParser", function(){
+    return {
+      restrict : "A",
+      scope : {
+        descriptor : "=vmParser"
+      },
+      template : "<div vm-component='descriptor.type' children='descriptor.children' param='descriptor'></div>" 
     }
   })
 
@@ -111,19 +133,22 @@
 
 
 
-  module.controller("vm.vchs.saas.controllers.main", ["$scope", function($scope){
-    $scope.name = "abe";
-  }]);
-  module.controller("vm.vchs.saas.controllers.pageNotFound", ["$scope", function($scope){
-    $scope.name = " Page not found";
-  }]);
-
-  module.config(function($routeProvider){
-    $routeProvider.otherwise({
-      templateUrl : "core/views/404.html",
-      controller : "vm.vchs.saas.controllers.pageNotFound"
+  module.controller("vm.vchs.saas.controllers.main", ["$scope", "$location", "$http", function($scope, $location, $http){
+    $scope.$watch(function(){
+      return $location.path();
+    }, function(path){
+      if(path == ""){
+        $location.path("/descriptors/demo.json");
+      }else{
+        path = path.substring(1);
+        $http.get(path)
+          .then(function(response){
+              $scope.descriptor = response.data;
+          })
+      }
     })
-  })
+  }]);
+  
 
   
   

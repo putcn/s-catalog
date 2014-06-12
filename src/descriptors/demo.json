@@ -1,0 +1,38 @@
+{
+  "type" : "core/components/layout/masterDetail",
+  "children" : [
+    {
+      "type" : "core/components/linkedSideBar",
+      "list" : [
+        {
+          "name" : "testLink",
+          "href" : "#/descriptors/demo1.json",
+          "displayName" : "Another Demo"
+        },
+        {
+          "name" : "testLink1",
+          "href" : "#/descriptors/demo1.json",
+          "displayName" : "Another Demo 1"
+        },{
+          "name" : "testLink2",
+          "href" : "#/descriptors/demo1.json",
+          "displayName" : "Another Demo 2"
+        }
+      ]
+    },{
+      "type" : "core/components/serviceList",
+      "services" : [
+        {
+          "serviceName" : "testName",
+          "icon" : "visual/icons/1.png",
+          "displayName" : "Test Service"
+        },
+        {
+          "serviceName" : "testName1",
+          "icon" : "visual/icons/1.png",
+          "displayName" : "Test Service1"
+        }
+      ]
+    }
+  ]
+}
