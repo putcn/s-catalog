@@ -1,0 +1,4 @@
+{
+  "hello" : "Hello",
+  "peopleCount" : "there are {{count}} people in the room"
+}

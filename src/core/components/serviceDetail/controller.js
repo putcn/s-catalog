@@ -1,4 +1,5 @@
 {
   "name" : "default Name",
-  "price" : "default price"
+  "price" : "default price",
+  "count" : 30
 }

@@ -1,5 +1,6 @@
 {
   "type" : "core/components/serviceDetail",
   "name" : "abc",
-  "price" : "$123"
+  "price" : "$123",
+  "count" : "120"
 }
