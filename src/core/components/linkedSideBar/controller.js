@@ -10,5 +10,8 @@
       "href" : "#/descriptors/demo1.json",
       "displayName" : "Another Demo 1"
     }
-  ]
+  ],
+  "changeName" : function(){
+    this.list[0].displayName = "TTTTTTTT";
+  }
 }

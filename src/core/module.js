@@ -225,11 +225,11 @@
 
       var i18nPromises = {};
       var serviceStub = {};
-      var currentLang = "en_us"//$i18nProvider.getLang(); TBD
+      var currentLang = "en_us";//$i18nProvider.getLang(); TBD
       var i18nCache = $cacheFactory("i18nCache" + currentLang);
       serviceStub.getI18nDictionary = function(componentId){
         var langBundleId = componentId + "/nls/" +  currentLang + ".json";
-        if(i18nCache[langBundleId]){
+        if(i18nPromises[langBundleId]){
           return i18nPromises[langBundleId];
         }
 
@@ -287,7 +287,7 @@
               return "%KEY MISSING%";
             }
             if(!stringTemplate){
-              return "%" + key + "%";
+              return key;
             }
             if( stringTemplate.indexOf("{{")>0 && stringTemplate.indexOf("}}")>0 ){
               config = config || {};
