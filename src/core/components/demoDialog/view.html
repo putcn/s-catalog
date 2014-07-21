@@ -1,0 +1,36 @@
+<div class="modal" ng-show="dialog.shouldShow">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <h4 class="modal-title">Error Information</h4>
+      </div>
+      <div class="modal-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Summary</th>
+              <th>Code</th>
+              <th>Level</th>
+              <th>Sender</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="message in messages | orderBy:'id':true | limitTo:5" >
+              <td>{{message.id}}</td>
+              <td>{{message.summary}}</td>
+              <td>{{message.code}}</td>
+              <td>{{message.level}}</td>
+              <td>{{message.sender}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" ng-click="clearMessages()">Clear</button>
+        <button type="button" class="btn btn-default" ng-click="closeDialog()">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

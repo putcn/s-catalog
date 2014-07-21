@@ -1,0 +1,6 @@
+{
+  "type" : "core/components/table",
+  "name" : "abc",
+  "price" : "$123",
+  "count" : "120"
+}

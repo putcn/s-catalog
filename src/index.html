@@ -38,15 +38,15 @@
 
     <!-- Begin page content -->
     <div class="container">
-      <ng-view />
+      <div vm-parser="descriptor"></div>
     </div>
 
     <div id="footer" ng-include="'core/views/footer.html'">
     </div>
 
-    <div vm-parser="descriptor"></div>
     <pre>
       {{ formattedJSON() }}
     </pre>
+    <div class="global-dialog" vm-component="'core/components/demoDialog'" param="messageDialogConfig"></div>
   </body>
 </html>

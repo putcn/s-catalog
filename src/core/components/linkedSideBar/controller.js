@@ -13,5 +13,7 @@
   ],
   "changeName" : function(){
     this.list[0].displayName = "TTTTTTTT";
+  },
+  init : function(){
   }
 }

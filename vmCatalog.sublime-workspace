@@ -1,0 +1,876 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fn",
+				"fun	Function"
+			],
+			[
+				"str",
+				"stringTemplate"
+			],
+			[
+				"get",
+				"getLang"
+			],
+			[
+				"def",
+				"deferred"
+			],
+			[
+				"st",
+				"stringTemplate"
+			],
+			[
+				"com",
+				"compile"
+			],
+			[
+				"comp",
+				"component"
+			],
+			[
+				"pa",
+				"param"
+			],
+			[
+				"ds",
+				"displayName"
+			],
+			[
+				"co",
+				"components"
+			],
+			[
+				"r",
+				"return"
+			],
+			[
+				"vm",
+				"vm-component"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"op",
+				"option"
+			],
+			[
+				"voted",
+				"votedInvitees"
+			],
+			[
+				"pro",
+				"promise"
+			],
+			[
+				"pr",
+				"promise"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/private/etc/apache2/httpd.conf",
+			"settings":
+			{
+				"buffer_size": 18314,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/core/module.js",
+			"settings":
+			{
+				"buffer_size": 10881,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Applications/XAMPP/xamppfiles/htdocs/agls-grower-2.0/src/descriptors/login.json",
+			"settings":
+			{
+				"buffer_size": 116,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Applications/XAMPP/xamppfiles/htdocs/agls-grower-2.0/src/agls/components/login/view.html",
+			"settings":
+			{
+				"buffer_size": 808,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Applications/XAMPP/xamppfiles/htdocs/agls-grower-2.0/src/agls/components/login/controller.js",
+			"settings":
+			{
+				"buffer_size": 492,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 2691,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/core/components/linkedSideBar/view.html",
+			"settings":
+			{
+				"buffer_size": 189,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/descriptors/demo.json",
+			"settings":
+			{
+				"buffer_size": 962,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/core/components/layout/masterDetail/view.html",
+			"settings":
+			{
+				"buffer_size": 307,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/core/components/layout/masterDetail/controller.js",
+			"settings":
+			{
+				"buffer_size": 6,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/core/components/layout/masterDetail/nls/en_us.json",
+			"settings":
+			{
+				"buffer_size": 6,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/core/components/serviceDetail/nls/en_us.json",
+			"settings":
+			{
+				"buffer_size": 83,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/core/components/serviceDetail/view.html",
+			"settings":
+			{
+				"buffer_size": 381,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/descriptors/detail.json",
+			"settings":
+			{
+				"buffer_size": 104,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{\n  \"name\" : \"default Name\",\n  \"price\" : \"default price\",\n  \"count\" : 30,\n  xxx : function(){\n  	this.i18n(\"hello\", {})\n  }\n}",
+			"file": "src/core/components/serviceDetail/controller.js",
+			"file_size": 74,
+			"file_write_time": 1403729191000000,
+			"settings":
+			{
+				"buffer_size": 125,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/core/components/linkedSideBar/controller.js",
+			"settings":
+			{
+				"buffer_size": 365,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{\n  a : 1,\n  b : \"abc\",\n  c : function (argument) {\n    this.param.a = {x:1,y:2};\n    this.childType = (this.childType == \"core/components/test2\") ? \"core/components/test1\" : \"core/components/test2\";\n  }\n}",
+			"file": "src/core/components/test/controller.js",
+			"file_size": 205,
+			"file_write_time": 1402541016000000,
+			"settings":
+			{
+				"buffer_size": 205,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/index.html",
+			"settings":
+			{
+				"buffer_size": 2058,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Applications/XAMPP/xamppfiles/htdocs/agls-grower-webapp-2/src/agls/services/session.json",
+		"/Applications/XAMPP/xamppfiles/htdocs/agls-grower-webapp-2/src/agls/components/login/controller.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/vm/s-catalog/src/core/components/layout/masterDetail/nls/en_us.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/vm/s-catalog/Gruntfile.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/vm/s-catalog/src/core/components/test1/view.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/vm/s-catalog/src/core/components/test2/controller.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/vm/s-catalog/src/core/components/test2/view.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/vm/s-catalog/src/core/components/test/controller.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/vm/s-catalog/src/core/components/test1/controller.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/vm/s-catalog/src/core/components/test/view.html",
+		"/Users/administrator/Desktop/htdocs/tea/poc/src/tea/core/directives/tea-directives.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/vm/s-catalog/src/core/components/layout/masterDetail/controller.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/vm/s-catalog/src/core/components/linkedSideBar/controller.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/vm/s-catalog/src/core/components/linkedSideBar/view.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/vm/s-catalog/src/descriptor/demo.json",
+		"/Applications/XAMPP/xamppfiles/htdocs/vm/s-catalog/src/core/components/serviceList/controller.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/vm/s-catalog/src/core/components/serviceList/view.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/vm/s-catalog/src/core/components/layout/masterDetail/view.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/vm/s-catalog/src/descriptor/demo1.json",
+		"/Applications/XAMPP/xamppfiles/htdocs/vm/s-catalog/src/core/components/serviceDetail/view.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/vm/s-catalog/src/core/components/serviceDetail/controller.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/vm/s-catalog/src/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/vm/s-catalog/src/core/module.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/vm/s-catalog/src/descriptors/demo.json",
+		"/Applications/XAMPP/xamppfiles/htdocs/agls-grower-webapp/client/test/protractor-conf.js",
+		"/Users/administrator/Desktop/htdocs/tea/poc/src/tea/core/services/tea-services.js",
+		"/Users/administrator/Desktop/htdocs/vm/s-catalog/src/index.html",
+		"/Users/administrator/Desktop/htdocs/vm/s-catalog/src/core/components/test/view.html",
+		"/Users/administrator/Desktop/htdocs/vm/s-catalog/src/core/components/test/controller.js",
+		"/Users/administrator/Desktop/htdocs/vm/s-catalog/src/core/module.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/keedowiStaging/parse/cloud/keedowi.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/agls-grower-webapp/script/Gruntfile.js",
+		"/private/etc/apache2/httpd.conf",
+		"/Users/administrator/Desktop/httpd.conf",
+		"/usr/sbin/httpd",
+		"/Users/administrator/Dropbox/3dmap/index.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"proxy",
+			"circle"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/private/etc/apache2/httpd.conf",
+					"settings":
+					{
+						"buffer_size": 18314,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18245,
+								18245
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6967.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/core/module.js",
+					"settings":
+					{
+						"buffer_size": 10881,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7732,
+								7732
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3584.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Applications/XAMPP/xamppfiles/htdocs/agls-grower-2.0/src/descriptors/login.json",
+					"settings":
+					{
+						"buffer_size": 116,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14,
+								47
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Applications/XAMPP/xamppfiles/htdocs/agls-grower-2.0/src/agls/components/login/view.html",
+					"settings":
+					{
+						"buffer_size": 808,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Applications/XAMPP/xamppfiles/htdocs/agls-grower-2.0/src/agls/components/login/controller.js",
+					"settings":
+					{
+						"buffer_size": 492,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Gruntfile.js",
+					"settings":
+					{
+						"buffer_size": 2691,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1113.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/core/components/linkedSideBar/view.html",
+					"settings":
+					{
+						"buffer_size": 189,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								182,
+								182
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/descriptors/demo.json",
+					"settings":
+					{
+						"buffer_size": 962,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								37,
+								49
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/core/components/layout/masterDetail/view.html",
+					"settings":
+					{
+						"buffer_size": 307,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								165,
+								165
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/core/components/layout/masterDetail/controller.js",
+					"settings":
+					{
+						"buffer_size": 6,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/core/components/layout/masterDetail/nls/en_us.json",
+					"settings":
+					{
+						"buffer_size": 6,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4,
+								4
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "src/core/components/serviceDetail/nls/en_us.json",
+					"settings":
+					{
+						"buffer_size": 83,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								83,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "src/core/components/serviceDetail/view.html",
+					"settings":
+					{
+						"buffer_size": 381,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								365,
+								365
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "src/descriptors/detail.json",
+					"settings":
+					{
+						"buffer_size": 104,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								87,
+								92
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "src/core/components/serviceDetail/controller.js",
+					"settings":
+					{
+						"buffer_size": 125,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								123,
+								123
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "src/core/components/linkedSideBar/controller.js",
+					"settings":
+					{
+						"buffer_size": 365,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								363,
+								363
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "src/core/components/test/controller.js",
+					"settings":
+					{
+						"buffer_size": 205,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								123,
+								144
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "src/index.html",
+					"settings":
+					{
+						"buffer_size": 2058,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1970,
+								1980
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 240.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 209.0,
+	"status_bar_visible": true
+}
